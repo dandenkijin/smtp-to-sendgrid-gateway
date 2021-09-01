@@ -57,7 +57,4 @@ new SMTPServer({
   },
 }).listen(config.smtp.port);
 
-logger.info(
-  'SMTP Forward listening on port %s for SMTP traffic.',
-  config.smtp.port
-);
+logger.info(`SMTP Forward listening on port ${config.smtp.port} for SMTP traffic.`);
